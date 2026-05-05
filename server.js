@@ -30,10 +30,11 @@ mongoose
     console.log("MongoDB Connected");
 
     const PORT = process.env.PORT || 5000;
+
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
     });
   })
   .catch((err) => {
-    console.error("DB Connection Error:", err.message);
+    console.error("MongoDB Connection Error:", err.message);
   });
